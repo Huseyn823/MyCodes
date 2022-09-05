@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="az">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+
+	<!-- Psevdo klasslar
+		:link - Sehifemizde acilmamis linklerin rengini mueyyen edir
+		:hover - Sehifemizdeki linklerin uzerine mouse ile geldikde stilini deyisir
+		:active - Element aktiv olduqda stilini deyisir(mouse ile basili tutarken)
+		:visited - Evvelceden ziyaret edilen linklerin rengini deyisir
+		:any-link - Sehifemizdeki linklerin URL hissesi bos deyilse stilini teyin edir.
+		:focus - Stilini deyismek istediyimiz HTML teqine fokuslanan zaman onun stilini deyisir
+		:lang() - Stilini deyismek istediyimiz HTML taginin diline uygun onun stilini deyisir
+		:root - Esas HTML teqinin stilini deyisir
+		:empty - Stilini deyismek istediyimiz HTML teqinin ici bosdursa onun stilini deyisir
+		:not() - Secilen HTML teqinden basqa butun teqlerin stilini deyisir
+		:target - HTML sehifesinde id (#) vasitesiyle unvani teyin olunmus teqe muraciet olunan zaman onun stilini deyisir.
+		:required - Daxil olunmasi vacib olan melumatlarin yazildigi HTML teqinin stilini deyisir.
+		:optional - Daxil olunmasi vacib olmayan melumatlarin yazildigi HTML teqinin stilini deyisir.
+		:disabled - HTML elementi secile bilmeyende onun stilini deyisir.(Meselen formlarda input bolmesi disabled oldugu zaman onun stilini deyisir)
+		:enabled - :disabled'in eksi
+		:read-only - HTML teqi read-only olanda onun stilini deyisir
+		:read-write - Yazib-poza bildiyimiz input teqinin stilini deyisir
+		:valid - Input teqinde yazilmis melumatin teleb olunan melumatla eyni oldugunu yoxlayaraq onun stilini deyisir
+		:invalid - Input teqinde yazilmis melumatin teleb olunan melumatla eyni deyilse onun stilini deyisir
+		:in-range - Daxil etdiyimiz eded teleb olunan araliqdadirsa stilini deyisir
+		:out-of-range - Daxil etdiyimiz eded teleb olunan araliqda deyilse stilini deyisir
+		:checked - (check oluna bilen) radio ve checkbox da elementleri deyisir
+	-->
+	<form align="center" action="gonder.html" method="POST" autocomplete="off">
+		Adiniz: <input type="text" name="ad" required value="ByteCode" disabled><br>
+		Soyadiniz: <input type="text" name="soyad" value="Academy" disabled><br>
+		Yasiniz:<input type="number" name="number" min="15" max="50">
+		E-Mail: <input type="email" name="email" required><br>
+		Cinsiniz:<br>
+		<input type="radio" name="cinsiyyet">Kisi
+		<input type="radio" name="cinsiyyet">Qadin <br>
+		Oyrenmek istediyiniz proqramlasdirma dilleri:<br>
+		<input type="checkbox" name="checkbox">PHP
+		<input type="checkbox" name="checkbox">JS
+		<input type="checkbox" name="checkbox">Python
+		<input type="checkbox" name="checkbox">Java <br>
+		<input type="submit" name="gonder" id="gonder" value="GONDER">
+	</form>
+
+
+</body>
+</html>

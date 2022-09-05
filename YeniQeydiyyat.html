@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Qeydiyyat</title>
+</head>
+<body style="background: grey">
+	<fieldset>
+	<legend>Sign-in</legend>
+	<form method="POST" action="Qeydiyyat.html" enctype="multipart/form-data" >
+		
+		<label>Name: <input type="text" name="name" required="" placeholder="Type your name..." autocomplete="off" minlength="3"></label>
+		<br>
+		<br>
+		<label>Surname: <input type="text" name="surname"></label>
+		<br>
+		<br>
+		<label>Email: <input type="email" name="email" required=""></label>
+		<br>
+		<br>
+		<label>Password: <input type="password" name="password" required=""></label>
+		<br>
+		<br>
+		<label>Password again: <input type="password" name="password"></label>
+		<br>
+		<br>
+		<label>
+			<input list="Front-End">
+			<datalist id="Front-End">
+				<option value="HTML">
+				<option value="CSS">
+				<option value="React">
+			</datalist>
+		</label>
+		<br>
+		<br>
+		<label>
+			<select>
+				<optgroup label="Front-End">
+					<option>HTML</option>
+					<option>CSS</option>
+					<option>JS</option>
+				</optgroup>
+				<optgroup label="Back-End">
+					<option>PHP</option>
+					<option>Java</option>
+					<option>C++</option>
+				</optgroup>
+			</select>
+		</label>
+		<br>
+		<br>
+		<label><input type="range" name="range"></label>
+		<br>
+		<br>
+		<label><input type="search" name="search"></label>
+		<br>
+		<br>
+		<label><input type="url" name="url" required=""></label>
+		<br>
+		<br>
+		<textarea rows="10" cols="20" > Your text: </textarea>
+		<br>
+		<br>
+		<label><input type="number" name="number" max="10" min="5" ></label>
+		<br>
+		<br>
+		<label>Man<input type="radio" name="gender"></label>
+		<label>Woman<input type="radio" name="gender"></label>
+		<br>
+		<br>
+		<label>Your file: <input type="file" name="file" accept="image/*" multiple=""></label>
+		<br>
+		<br>
+		<label>I accept <a href="https://google.com" target="_blank">User Agreement</a><input type="checkbox" name="agreement"></label>
+		<br>
+		<br>
+		<label><input type="submit" name="submit" value="SIGN-IN"></label>
+		<label><input type="reset" name="reset"></label>
+	</form>
+	</fieldset>
+</body>
+</html>
+
